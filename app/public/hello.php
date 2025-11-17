@@ -29,7 +29,14 @@
  */
 
 // Note the `echo` outputs text to the HTTP response body directly (you will see this in the browser).
-echo 'Hello world!';
+if (isset($_GET['name'])&& isset($_GET['age'])){
+    echo 'Hello ' . htmlspecialchars($_GET['name']) . ', your age is ' . htmlspecialchars($_GET['age']);
+} else {
+    echo 'Hello Guest, I don\'t know your age!';
+    echo 'please fill in your name and age';
+}
+die();
+
 
 // Note: PHP is a templating language, so you can mix HTML and PHP code in the same file.
 // To start writing HTML, just close the PHP tag like this:

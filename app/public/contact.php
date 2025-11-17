@@ -19,7 +19,7 @@
  *  Note: Use of `htmlspecialchars`. Research why this is used here when displaying user supplied data in the browser.
  */
 
-if (FALSE) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Collect and sanitize input
     $name = htmlspecialchars(trim($_POST['name'] ?? ''));
     $email = htmlspecialchars(trim($_POST['email'] ?? ''));

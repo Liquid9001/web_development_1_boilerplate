@@ -44,6 +44,7 @@ switch ($routeInfo[0]) {
         break;
     // Handle found routes
     case FastRoute\Dispatcher::FOUND:
+        
         /**
          * $routeInfo contains the data about the matched route.
          * 
@@ -66,7 +67,16 @@ switch ($routeInfo[0]) {
 
         // TODO: pass the dynamic route data to the controller method
         // When done, visiting `http://localhost/hello/dan-the-man` should output "Hi, dan-the-man!"
-        throw new Exception('Not implemented yet');
+
+        $controllerName = $routeInfo[1][0];
+        $method = $routeInfo[1][1];
+        $params = $routeInfo[2];
+
+        $controller = new $controllerName();
+
+        $controller->$method($params);
+
+        // throw new Exception('Not implemented yet');
 
         break;
 }
