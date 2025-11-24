@@ -1,0 +1,213 @@
+/* Cleaned stylesheet */
+
+body {
+    background-color: #f6f7f9;
+    color: #223;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* layout */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 980px;
+    margin: 2.5rem auto;
+    padding: 0 1.25rem;
+}
+
+/* page headings */
+header {
+    margin-bottom: 0.75rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0 0 0.25rem;
+    color: #0b1220;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #334155;
+    margin: 0 0 0.75rem;
+}
+
+/* header */
+header h1 {
+    font-size: 1.9rem;
+    margin: 0 0 1rem;
+    color: #0b1220;
+    letter-spacing: -0.01em;
+}
+
+/* guestbook entries */
+.guestbook-list {
+    margin-top: 0.75rem;
+}
+
+.entry {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba(15, 20, 30, 0.06);
+    box-shadow: 0 6px 18px rgba(21, 32, 43, 0.04);
+}
+
+.entry .author {
+    display: block;
+    font-weight: 700;
+    color: #0f1724;
+    margin-bottom: 0.5rem;
+}
+
+.entry blockquote, .entry p {
+    margin: 0 0 0.85rem;
+}
+
+.entry p {
+    margin: 0 0 0.85rem;
+    color: #334155;
+    font-size: 0.98rem;
+}
+
+.entry blockquote {
+    margin: 0;
+    padding: 0.6rem 0.9rem;
+    padding-left: 0.75rem;
+    border-left: 3px solid rgba(16, 24, 40, 0.06);
+    color: #3b4754;
+    background: rgba(15, 20, 30, 0.01);
+    border-radius: 4px;
+}
+
+.entry .meta {
+    font-size: 0.83rem;
+    color: #7b8892;
+    margin-top: 0.6rem;
+}
+
+/* meta / timestamp */
+.entry .meta {
+    font-size: 0.85rem;
+    color: #657787;
+    margin-top: 0.6rem;
+}
+
+/* form */
+form {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(15, 20, 30, 0.04);
+    box-shadow: 0 6px 18px rgba(21, 32, 43, 0.03);
+    margin-bottom: 1.25rem;
+}
+
+.no-posts {
+    color: #66707a;
+    background: #fff;
+    padding: .75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(15,20,30,0.03);
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #1f2a37;
+    margin-bottom: 0.35rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid rgba(15, 20, 30, 0.08);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    background: #fbfdff;
+    color: #14202b;
+}
+
+/* small screens */
+@media (max-width: 520px) {
+    .container { padding: 0 0.9rem; }
+    header h1 { font-size: 1.4rem; }
+    .entry { padding: 1rem; }
+}
+
+/* post message form styling */
+.postmessage {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0 1.5rem;
+    border: 1px solid rgba(15,20,30,0.04);
+    box-shadow: 0 6px 18px rgba(21,32,43,0.03);
+}
+
+.postmessage h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+    color: #0b1220;
+}
+
+.postmessage .form-group {
+    margin-bottom: 0.85rem;
+}
+
+.postmessage label {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: #1f2a37;
+    font-size: 0.95rem;
+}
+
+.postmessage input[type="text"],
+.postmessage input[type="email"],
+.postmessage textarea {
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid rgba(15,20,30,0.08);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background: #fbfdff;
+    color: #14202b;
+}
+
+.postmessage button[type="submit"],
+button[type="submit"] {
+    background: #0b69ff;
+    color: #fff;
+    border: none;
+    padding: 0.55rem 0.9rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 150ms ease, transform 80ms ease;
+}
+
+.postmessage button[type="submit"]:hover,
+button[type="submit"]:hover {
+    background: #095ad6;
+}
+
+.postmessage button[type="submit"]:active,
+button[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 520px) {
+    .postmessage { padding: 0.85rem; }
+}
