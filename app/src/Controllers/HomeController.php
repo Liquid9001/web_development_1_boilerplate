@@ -8,6 +8,6 @@ class HomeController
     {
         // normally we don't want to echo from a controller method directly
         // but rather load a view template
-        echo "Welcome home!";
+        require __DIR__ . '/../Views/home.php';
     }
 }

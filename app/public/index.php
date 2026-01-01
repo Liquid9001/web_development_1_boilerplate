@@ -28,6 +28,7 @@ $dispatcher = simpleDispatcher(function (RouteCollector $r) {
     $r->addRoute('POST', '/guestbook/edit/{id}', ['App\Controllers\GuestbookController', 'update']);
     $r->addRoute('GET', '/login', ['App\Controllers\LoginController', 'loginForm']);
     $r->addRoute('POST', '/login', ['App\Controllers\LoginController', 'login']);
+    $r->addRoute('GET', '/register', ['App\Controllers\LoginController', 'register']);
     $r->addRoute('GET', '/logout', ['App\Controllers\LoginController', 'logout']);
     $r->addRoute('GET', '/articles', ['App\Controllers\ArticleController', 'index']);
 });

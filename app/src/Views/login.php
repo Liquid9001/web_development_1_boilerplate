@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+<?php
+require __DIR__ . '/partials/header.php';
+?>
     <div class="container">
-        <h1>Admin Login</h1>
+        <h1>Login</h1>
         <?php if (!empty($error)) { ?>
             <p style="color:red;"><?php echo htmlspecialchars($error); ?></p>
         <?php } ?>

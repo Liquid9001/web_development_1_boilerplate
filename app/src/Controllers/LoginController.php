@@ -38,6 +38,11 @@ class LoginController
         require __DIR__ . '/../Views/login.php';
     }
 
+    public function register($params = [])
+    {
+        require __DIR__ . '/../Views/register.php';
+    }
+
     public function logout($params = [])
     {
         if (isset($_SESSION['is_admin'])) {
