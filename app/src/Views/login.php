@@ -13,7 +13,7 @@ require __DIR__ . '/partials/header.php';
                         <ul class="nav nav-tabs nav-justified">
                             <li class="nav-item">
                                 <a class="nav-link active fw-bold py-3 text-primary border-top-0 border-start-0 border-end-0"
-                                    aria-current="page" href="#" style="border-bottom: 3px solid #0d6efd;">
+                                    aria-current="page" href="/login" style="border-bottom: 3px solid #0d6efd;">
                                     Inloggen
                                 </a>
                             </li>
