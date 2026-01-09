@@ -24,12 +24,17 @@ class LoginController
             return;
         }
 
-        $user = $_POST['username'] ?? '';
+        $user = $_POST['email'] ?? '';
         $pass = $_POST['password'] ?? '';
 
         if ($user === Config::ADMIN_USER && $pass === Config::ADMIN_PASS) {
             $_SESSION['is_admin'] = true;
             header('Location: /guestbook/manage');
+            exit();
+        }
+        if ($user === Config::USER && $pass === Config::PASS) {
+            $_SESSION['is_user'] = true;
+            header('Location: /');
             exit();
         }
 
@@ -48,7 +53,7 @@ class LoginController
         if (isset($_SESSION['is_admin'])) {
             unset($_SESSION['is_admin']);
         }
-        header('Location: /guestbook');
+        header('Location: /');
         exit();
     }
 }

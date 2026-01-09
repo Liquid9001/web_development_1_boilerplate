@@ -33,13 +33,13 @@ require __DIR__ . '/partials/header.php';
                         </p>
 
                         <form action="/login" method="post">
-                            <div class="mb-4">
+                            <div class="form-group mb-4">
                                 <label for="loginEmail" class="form-label fw-bold">E-mailadres</label>
                                 <input type="email" class="form-control form-control-lg bg-light" id="loginEmail"
                                     name="email" required>
                             </div>
 
-                            <div class="mb-2">
+                            <div class="form-group mb-2">
                                 <label for="loginPassword" class="form-label fw-bold">Wachtwoord</label>
                                 <div class="input-group">
                                     <input type="password" class="form-control form-control-lg bg-light border-end-0"
@@ -51,8 +51,7 @@ require __DIR__ . '/partials/header.php';
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary w-100 py-3 fs-5 fw-bold">Inloggen met je
-                                e-mailadres</button>
+                            <button type="submit" class="btn btn-primary w-100 py-3 fs-5 fw-bold">Login</button>
                         </form>
                     </div>
                 </div>

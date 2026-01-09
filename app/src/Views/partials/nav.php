@@ -13,7 +13,7 @@
                 <li><a href="#" class="nav-link px-2">FAQs</a></li>
                 <li><a href="#" class="nav-link px-2">About</a></li>
             </ul>
-            <div class="col-md-3 text-end"> <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button> </div>
+            <div class="col-md-3 text-end"> <a href="/login" class="btn btn-outline-primary me-2">Login</a>
+                <a href="/register" class="btn btn-primary">Sign-up</a> </div>
         </header>
   </nav>
